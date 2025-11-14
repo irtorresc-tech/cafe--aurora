@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aurora</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="menu-container">
+    <div class="container">
+      <div class="menu">
+        <a href="#" class="logo">Cafe Aurora</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="img/menu.png" class="menu-icono" alt="Menú" />
+        </label>
+        <div class="navbar">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="header-principal">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-txt">
+          <h1>
+            Bienvenido <br />
+            Ven y Disfruta Nuestro Café Fresco
+          </h1>
+          <p>
+            Café orgánico de los mejores granos.
+            Abierto de lunes a sábado. ¡Te esperamos!
+          </p>
+        </div>
+        <div class="header-img">
+          <img src="img/imgh.png" alt="Café fresco" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN SOBRE NOSOTROS -->
+  <section class="sobre-nosotros" id="sobre-nosotros">
+    <div class="sobre-nosotros__contenedor">
+      <div class="sobre-nosotros__imagen">
+        <img src="img/gato.jpg" alt="Foto personal o de trabajo">
+      </div>
+
+      <div class="sobre-nosotros__texto">
+        <div class="bloque">
+          <h2>¿Quién soy?</h2>
+          <p>
+            Soy Ivan, estudiante de la universidad Francisco de Paula Santander Ocaña
+            y este proyecto es una landing page.
+          </p>
+          <ul>
+            <li>Landing page de Cafe Aurora .</li>
+            <li>Disfruto haciendo cafe de alta calidad.</li>
+            <li>Creo en la mejora continua y la colaboración.</li>
+          </ul>
+        </div>
+
+        <div class="bloque">
+          <h2>¿Qué es eso de Cafe Aurora?</h2>
+          <p>
+            Es un conjunto de estrategias que combinan creatividad, análisis
+            y comunicación para conectar mejor con el público y generar resultados.
+          </p>
+          <p><strong>El resultado:</strong> una marca más sólida, más visible y más humana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- SECCIÓN DE PRODUCTOS -->
+ 
+ <section class="productos" id="productos">
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <p>Explora nuestra selección de cafés artesanales y productos especiales.</p>
+
+      <div class="productos-grid">
+
+        <!-- PRODUCTO 1 -->
+        <div class="producto-card">
+          <img src="../img/Café Molido Premium.webp" alt="Café molido premium">
+          <h3>Café Molido Premium</h3>
+          <p class="descripcion">Granos seleccionados de alta montaña, con tueste medio y aroma intenso.</p>
+          <p class="precio">$12.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="producto-card">
+          <img src="../img/Café en Grano Oscuro.JPG" alt="Café en grano oscuro">
+          <h3>Café en Grano Oscuro</h3>
+          <p class="descripcion">Ideal para espresso. Sabor fuerte con notas de cacao y nuez.</p>
+          <p class="precio">$15.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="producto-card">
+          <img src="../img/Café Orgánico.jpg" alt="Café orgánico">
+          <h3>Café Orgánico</h3>
+          <p class="descripcion">100% natural, cultivado sin pesticidas y con procesos sostenibles.</p>
+          <p class="precio">$14.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+        <!-- PRODUCTO 4 -->
+        <div class="producto-card">
+          <img src="../img/taza aurora" alt="Taza Café Aurora">
+          <h3>Taza Café Aurora</h3>
+          <p class="descripcion">Taza cerámica personalizada con nuestro logo. Perfecta para tu café diario.</p>
+          <p class="precio">$8.00</p>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  
+
+  <!-- SECCIÓN DE CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="container contacto__contenedor">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna pregunta o sugerencia? ¡Nos encantaría escucharte!</p>
+
+      <form class="contacto__formulario">
+        <div class="form-grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        </div>
+
+        <div class="form-grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SCRIPT CORRECTAMENTE ENLAZADO -->
+  <script src="scripts.js"></script>
+</body>      
+
+</html>
+
+
